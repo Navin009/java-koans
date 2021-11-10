@@ -16,6 +16,7 @@ public class AboutKoans {
         boolean koanIsComplete = true;
         if (!koanIsComplete) {
             //fail("what if koanIsComplete variable was true?");
+            // It will execute the fail method and throw an exception
         }
     }
 
