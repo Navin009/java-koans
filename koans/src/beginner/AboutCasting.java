@@ -80,9 +80,9 @@ public class AboutCasting {
         Grandparent child = new Child();
         Parent parentReference = (Parent) child; // Why do we need an explicit cast here?
         Child childReference = (Child) parentReference; // Or here?
-        assertEquals(childReference instanceof Child, __);
-        assertEquals(childReference instanceof Parent, __);
-        assertEquals(childReference instanceof Grandparent, __);
+        assertEquals(childReference instanceof Child, true);
+        assertEquals(childReference instanceof Parent, true);
+        assertEquals(childReference instanceof Grandparent, true);
     }
 
     @Koan
@@ -91,7 +91,7 @@ public class AboutCasting {
         Parent parent = (Child) child;
         // Think about the result. Did you expect that? Why?
         // How is that different from above?
-        assertEquals(parent.complain(), __);
+        assertEquals(parent.complain(), "Are we there yet!!");
     }
 
     @Koan
