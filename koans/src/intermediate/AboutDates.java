@@ -18,7 +18,7 @@ public class AboutDates {
 
     @Koan
     public void dateToString() {
-        assertEquals(date.toString(), __);
+        assertEquals(date.toString(), "Sat Mar 03 18:03:21 IST 1973" );
     }
 
     @Koan
